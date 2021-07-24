@@ -6,7 +6,6 @@
     :todo="todoObj"
     :checkTodo='checkTodo'
     :deleteTodo='deleteTodo'
-    :clearAllDone="clearAllDone"
     />
   </ul>
 </template>
@@ -17,7 +16,7 @@ import MyItem from './MyItem.vue'
 export default {
   name:'MyList',
   components:{MyItem},
-  props:['todos','checkTodo','deleteTodo',"clearAllDone"]
+  props:['todos','checkTodo','deleteTodo']
   
 
 }

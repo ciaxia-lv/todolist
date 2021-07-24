@@ -7,8 +7,8 @@
       :todos='todos' 
       :checkTodo='checkTodo'
       :deleteTodo='deleteTodo'
-      :clearAllDone='clearAllDone'/>
-      <MyFooter :todos='todos' :checkAllTode='checkAllTode'/>
+      />
+      <MyFooter :todos='todos' :checkAllTode='checkAllTode' :clearAllDone='clearAllDone'/>
     </div>
   </div>
 </div>
@@ -55,8 +55,10 @@ export default {
       })
     },
     clearAllDone(){
-      // if(this.todos.done === ture)
-      // deleteTodo()
+      this.todos = this.todos.filter((todo)=>{
+        return !todo.done
+      }) 
+      
     }
   }
 }
