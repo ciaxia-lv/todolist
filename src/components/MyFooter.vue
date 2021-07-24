@@ -6,7 +6,7 @@
     <span>
       <span>已完成{{doneTotal}}</span> / 全部{{total}}
     </span>
-    <button class="btn btn-danger">清除已完成任务</button>
+    <button class="btn btn-danger" @click="clearDone">清除已完成任务</button>
   </div>
 </template>
 
@@ -32,7 +32,10 @@ export default {
   methods:{
     checkAll(e){
       this.checkAllTode(e.target.checked)
-    }
+    },
+    // clearDone(done){
+    //   this.clearAllDone(this.todo.done)
+    // }
   }
 }
 </script>
