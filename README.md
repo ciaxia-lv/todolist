@@ -1,24 +1,5 @@
-# vue_test
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 整体流程
+1.实现静态组件：抽取组件，使用组件实现静态页面效果
+整体分为Header,List,Footer, List中又包含组件Item
+2.展示动态数据
+采取[{}]来存储数据，存储在List组件中
