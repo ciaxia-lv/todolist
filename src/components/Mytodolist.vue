@@ -54,6 +54,7 @@ export default {
         todo.done = done
       })
     },
+    //删除已完成任务
     clearAllDone(){
       this.todos = this.todos.filter((todo)=>{
         return !todo.done
